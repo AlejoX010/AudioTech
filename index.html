@@ -1,18 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/clima.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clima App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Inter:wght@900&display=swap" rel="stylesheet">
+<html lang="es">
 
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/beats_headphones_audio_listen_edit_beats_icon-icons.com_55209.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <title>AudioTech</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="imagen-header">
+                <picture>
+                    <source sizes="1920w" srcset="img/header.avif 1920w" type="image/avif">
+                    <source sizes="1920w" srcset="img/header.webp 1920w" type="image/webp">
+                    <source sizes="1920w" srcset="img/header.png 1920w" type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="img/header.png" lazyalt="imagen" width="1000"
+                        height="600">
+                </picture>
+            </div>
+
+            <div class="texto-header">
+                <p class="tagline-producto">Sonido Envolvente</p>
+                <h1 class="nombre-producto degradado-verde">AudioTech</h1>
+                <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam impedit
+                    rem, ullam dolore quas iste nesciunt, iusto expedita minima esse minus atque aperiam odio quasi vel,
+                    itaque repudiandae quod ducimus?</p>
+                <p class="precio-producto">Desde<span>$299</span> </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="contenedor">
+        <div class="iconos">
+            <div class="icono">
+                <img src="img/icono-sonido.svg" alt="icono del sonido">
+                <h3>Gran Sonido</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, consequatur rem? Cum dicta possimus illum odio accusantium, at deserunt obcaecati odit ex animi architecto alias adipisci excepturi quod tempora. Aliquid.</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/icono-garantia.svg" alt="icono del sonido">
+                <h3>Garantia de por vida</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, consequatur rem? Cum dicta possimus illum odio accusantium, at deserunt obcaecati odit ex animi architecto alias adipisci excepturi quod tempora. Aliquid.</p>
+            </div>
+
+            <div class="icono">
+                <img src="img/icono-bateria.svg" alt="icono del sonido">
+                <h3>+20 horas de bateria</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, consequatur rem? Cum dicta possimus illum odio accusantium, at deserunt obcaecati odit ex animi architecto alias adipisci excepturi quod tempora. Aliquid.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-tech">
+        <div class="contenedor sobre-tech-grid">
+            <div class="texto-sobre-tech">
+                <h2>Sobre los <span>AudioTech</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis hic, nemo, saepe ratione dolores, suscipit at labore eum incidunt maiores dolor fuga nihil tempora enim consequatur?</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="contenedor modelos ">
+        <h2 class="text-center degradado-verde header-modelos">Elige tus AudioTech</h2>
+        <div class="listado-modelos">
+            <div class="modelo modelo-x">
+                <h3>AudioTech X</h3>
+                <p class="precio">$299</p>
+            </div>
+
+            <div class="modelo modelo-y">
+                <h3>AudioTech Y</h3>
+                <p class="precio">$399</p>
+            </div>
+
+            <div class="modelo modelo-z">
+                <h3>AudioTech Z</h3>
+                <p class="precio">$499</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="newsletter">
+        <div class="contenedor contenido-newsletter">
+            <div class="texto-newsletter">
+                <h2>Recibe Actualizaciones</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem consequatur culpa doloribus, iusto eum dolores fugit voluptate ipsum consequuntur corrupti aperiam reiciendis quibusdam dicta officiis beatae tenetur suscipit temporibus animi!</p>
+
+                <form class="formulario">
+                    <div class="input">
+                        <input type="text" placeholder="correo@correo.com">
+                    </div>
+                    <button type="submit">
+                        <div class="svg-wrapper-1">
+                          <div class="svg-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <span>Enviar</span>
+                      </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="degradado-verde">&copy;Anuar Hernández</p>
+    </footer>
+</body>
+
 </html>
